@@ -1,0 +1,41 @@
+.gallery-scroll-hide::--webkit-scrollbar{
+display: none;
+}
+
+.gallery-scroll-hide{
+    scrollbar-width: none;
+    -ms-overflow-style:none;
+}
+
+.gallery-image{
+    filter: grayscale(100%);
+
+}
+
+.gallery-image:hover{
+filter: grayscale(0%);
+cursor: pointer;
+animation-name: galleryAnimation;
+animation-duration: 0.5s;
+animation-timing-function: ease-in-out;
+transform: rotate(-5deg);
+}
+
+@keyframes galleryAnimation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-5deg);
+    }
+}
+
+.gallery-addBtn-inner{
+    box-shadow: inset 5px 5px 10px rgba(255, 255, 255, 0.2) !important;
+}
+.gallery-addBtn-drop{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.gallery-addBtn-dropTwo{
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.15);
+}
